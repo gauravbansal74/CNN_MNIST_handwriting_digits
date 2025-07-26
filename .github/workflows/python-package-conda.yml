@@ -20,4 +20,4 @@ jobs:
           pip install -r requirements.txt
 
       - name: Build package
-        run: python3 main.pygst # Example for running tests
+        run: python3 main.py # Example for running tests
