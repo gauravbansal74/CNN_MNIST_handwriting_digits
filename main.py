@@ -18,8 +18,6 @@ if __name__ == '__main__':
     BaseLineModel.plot_dataset(x_train, y_train, x_test, y_test)
     x_train, x_test = BaseLineModel.prepare_dataset(x_train, x_test)
     model = BaseLineModel.define_model()
-    model.fit(x_train, y_train, epochs=10, batch_size=32, verbose=0)
+    print('before model fit')
+    model.fit(x_train, y_train, epochs=10, batch_size=32)
     model.save('final_model.keras')
-
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
