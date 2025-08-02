@@ -24,6 +24,7 @@ def load_image(filename):
 def run_example():
         # load the image
         img = load_image('sample_image.png')
+        print(img.shape)
         # load model
         model = load_model('final_model.keras')
         # predict the class
